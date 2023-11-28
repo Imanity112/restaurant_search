@@ -1,0 +1,113 @@
+button.link-style-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #0033cc;
+}
+
+button.link-style-btn:hover {
+  text-decoration: underline;
+  color: #002080;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#search-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#search-container select,
+#search-container button {
+  margin: 0 10px;
+}
+
+#results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.restaurant-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 884px;
+  height: 330px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-item img {
+  margin-bottom: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+.restaurant-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #cfcfcf;
+  color: #373737;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #9c9c9c;
+}
+
+.pagination .active {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: rgb(183, 174, 236);
+  color: #fff;
+}
+
+#detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#detail-container img {
+  margin-bottom: 20px;
+}
+
+#detail-container h2,
+#detail-container p {
+  margin: 10px 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>searchapp</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h1>Restaurant Search</h1>
+  <div id="search-container">
+    <form>
+      <label for="radius">検索半径 (m)</label>
+      <select id="radius">
+        <option value="1">300m</option>
+        <option value="2">500m</option>
+        <option value="3">1000m</option>
+        <option value="4">2000m</option>
+        <option value="5">3000m</option>
+      </select>
+    </form>
+    <button onclick="searchRestaurants()">検索</button>
+  </div>
+  
+  <div id="results-container">
+    <h3 id="result-restaurant"></h3>
+    <div id="restaurant-list"></div>
+    <div id="pagination"></div>
+  </div>
+
+  <div id="detail-container" style="display:none;">
+    <h2 id="detail-name"></h2>
+    <p id="detail-address"></p>
+    <p id="detail-hours"></p>
+    <img id="detail-image" alt="店舗画像">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
